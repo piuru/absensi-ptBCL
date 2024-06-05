@@ -2,7 +2,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title">Absen Harian</h4>
+                <h4 class="card-title">Absen Bulanan</h4>
             </div>
             <div class="card-body">
                 <table class="table w-100">
