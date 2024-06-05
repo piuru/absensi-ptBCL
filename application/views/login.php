@@ -17,7 +17,7 @@
                     <section id="login-body" class="pt-3">
                         <div class="card border-0 shadow pt-3">
                             <div class="card-header bg-transparent border-bottom-0 pb-0 text-center">
-                                <h3>PT BCL</h3>
+                                <h3>PT Bunga Citra Lestari</h3>
                                 <div class="mt-3">
                                     <span class="card-info text-center">Masuk untuk melakukan absensi</span>
                                 </div>
