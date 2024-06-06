@@ -12,8 +12,8 @@
                     <table class="table table-striped">
                         <thead>
                             <th>No.</th>
-                            <th>Nama </th>
-                            <th>Action</th>
+                            <th>Nama Divisi </th>
+                            <th>Aksi</th>
                         </thead>
                         <tbody id="tbody-divisi">
                             <?php foreach($divisi as $i => $d): ?>
