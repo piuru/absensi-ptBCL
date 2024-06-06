@@ -17,7 +17,7 @@ class User extends CI_Controller
         return $this->template->load('template', 'edit_profil', $data);
     }
 
-    public function edit_profil()
+    public function edit_profile()
     {
         $post = $this->input->post();
         $data = [
