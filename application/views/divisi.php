@@ -12,7 +12,7 @@
                     <table class="table table-striped">
                         <thead>
                             <th>No.</th>
-                            <th>Nama Divisi</th>
+                            <th>Nama </th>
                             <th>Action</th>
                         </thead>
                         <tbody id="tbody-divisi">
