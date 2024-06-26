@@ -3,6 +3,19 @@ defined('BASEPATH') OR die('No direct script access allowed!');
 
 class Absensi_model extends CI_Model 
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->database();
+    }
+
+    public function get_absen_hari_ini(){
+        $today_date = date('Y-m-d');
+        $this->db->where('tgl', $today_date);
+        $query = $this->db->get('absensi');
+        return $query->result();
+    }
+
     public function get_absen($id_user, $bulan, $tahun)
     {
         $this->db->select("DATE_FORMAT(a.tgl, '%d-%m-%Y') AS tgl, a.waktu AS jam_masuk, (SELECT waktu FROM absensi al WHERE al.tgl = a.tgl AND id_user = '6' AND al.keterangan != a.keterangan) AS jam_pulang");
