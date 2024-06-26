@@ -9,6 +9,16 @@ class Jam_model extends CI_Model
         return $result->result();
     }
 
+    public function get_jam_masuk(){
+        $query = $this->db->get_where('jam', array('keterangan' => 'Masuk'));
+        return $query->row();
+    }
+
+    public function get_jam_pulang(){
+        $query = $this->db->get_where('jam', array('keterangan' => 'Pulang'));
+        return $query->row();
+    }
+
     public function find($id)
     {
         $this->db->where('id_jam', $id);
