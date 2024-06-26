@@ -15,6 +15,7 @@
     
     <!-- CSS Files -->
     <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet" />
+    <link href="<?= base_url('assets/css/dashboard.css') ?>" rel="stylesheet" />
     <link href="<?= base_url('assets/css/light-bootstrap-dashboard.css?v=2.0.1') ?>" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="<?= base_url('assets/css/demo.css') ?>" rel="stylesheet" />

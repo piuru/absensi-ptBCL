@@ -59,32 +59,32 @@ class Divisi extends CI_Controller
         return $this->response_json($response);
     }
 
-    public function destroy($id)
-    {
-        $where = array('id_divisi' => $id);
-        $this->db->delete('divisi',$where);
-        redirect('divisi');
-    //     $id_divisi = $this->uri->segment(3);
-    //     $result = $this->divisi->delete_data($id_divisi);
-    //     if ($result) {
-    //         $response = [
-    //             'status' => 'success',
-    //             'message' => 'Divisi telah dihapus!'
-    //         ];
-    //     } else {
-    //         $response = [
-    //             'status' => 'error',
-    //             'message' => 'Divisi gagal dihapus!'
-    //         ];
-    //     }
+    public function destroy($id){
+    // Hapus data divisi dari tabel berdasarkan id_divisi yang diberikan
+    $result = $this->divisi->delete_data($id);
+    redirect('divisi');
 
-    //     return $this->response_json($response);
-    // }
+    if ($result) {
+        $response = [
+            'status' => 'success',
+            'message' => 'Divisi telah dihapus!'
+        ];
+    } else {
+        $response = [
+            'status' => 'error',
+            'message' => 'Divisi gagal dihapus!'
+        ];
+    }
 
-    // private function response_json($response)
-    // {
-    //     header('Content-Type: application/json');
-    //     echo json_encode($response);
+    // Mengembalikan respons dalam bentuk JSON
+    return $this->response_json($response);
+    }
+
+
+     private function response_json($response)
+     {
+         header('Content-Type: application/json');
+         echo json_encode($response);
     }
 }
 
