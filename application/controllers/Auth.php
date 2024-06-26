@@ -13,7 +13,7 @@ class Auth extends CI_Controller
     {
         return $this->load->view('login');
     }
-
+    
     public function login()
     {
         $this->load->model('User_Model', 'user');
@@ -24,7 +24,7 @@ class Auth extends CI_Controller
         if ($check->num_rows() == 1) {
             $user_data = $check->row();
             $verify_password = password_verify($password, $user_data->password);
-
+    
             if ($verify_password) {
                 $this->set_session($user_data);
                 redirect('dashboard');
