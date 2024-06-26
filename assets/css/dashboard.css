@@ -1,0 +1,46 @@
+.body {
+    color: #f8f9fa;
+}
+.card-box {
+    /* Sesuaikan ukuran dan margin sesuai kebutuhan */
+    max-width: 100%;
+}
+
+.card {
+    background-color: #f8f9fa;
+}
+
+.card-header {
+    background-color: #0e73d8;
+    color: white;
+}
+
+.card-body-0 {
+    padding: 20px;
+    background-color: #0e73d8;
+}
+
+.card-body-1 {
+    padding: 20px;
+    background-color: rgb(231, 128, 2);
+}
+
+.card-body-2 {
+    padding: 10px;
+    background-color: green;
+}
+
+.card-body-3 {
+    padding: 10px;
+    background-color: darkorchid;
+}
+
+.card-title .card-text{
+    color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    color: #f8f9fa;
+    margin-top: 10px;
+}
