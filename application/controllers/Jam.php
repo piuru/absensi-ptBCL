@@ -12,8 +12,8 @@ class Jam extends CI_Controller
     }
 
     public function index()
-    {
-        $data['jam'] = $this->jam->get_all();
+    {)
+        $data['jam'] = $this->jam->get_all(;
         return $this->template->load('template', 'jam', $data);
     }
 
