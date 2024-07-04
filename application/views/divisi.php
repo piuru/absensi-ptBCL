@@ -13,7 +13,7 @@
                         <thead>
                             <th>No.</th>
                             <th>Nama Divisi </th>
-                            <th>Action</th>
+                            <th>Aksi</th>
                         </thead>
                         <tbody id="tbody-divisi">
                             <?php foreach($divisi as $i => $d): ?>
